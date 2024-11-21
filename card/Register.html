@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Set karakter UTF-8 untuk mendukung berbagai karakter -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Membuat halaman responsif sesuai dengan ukuran layar perangkat -->
+  <title>REGISTER FORM</title> <!-- Judul halaman -->
+  <link rel="stylesheet" href="stayl.css"> <!-- Menyambungkan file CSS eksternal -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Menghubungkan library ikon Boxicons -->
+</head>
+
+<body>
+  <div class="wrapper"> <!-- Kontainer utama untuk form register -->
+      <form action="kopipaste.html"> <!-- Form register, dengan method dan action belum didefinisikan -->
+        <h1>REGISTER</h1> <!-- Judul form register -->
+        <div class="input-box"> <!-- Input untuk nama lengkap -->
+          <input type="text" placeholder="Full Name" required> <!-- Kolom input teks untuk nama lengkap, wajib diisi -->
+          <i class='bx bxs-user'></i> <!-- Ikon user dari Boxicons -->
+        </div>
+        <div class="input-box"> <!-- Input untuk username -->
+          <input type="text" placeholder="Username" required> <!-- Kolom input teks untuk username, wajib diisi -->
+          <i class='bx bxs-user'></i> <!-- Ikon user dari Boxicons -->
+        </div>
+        <div class="input-box"> <!-- Input untuk email -->
+          <input type="email" placeholder="Email" required> <!-- Kolom input email, wajib diisi -->
+          <i class='bx bxs-envelope'></i> <!-- Ikon amplop dari Boxicons untuk email -->
+        </div>
+        <div class="input-box"> <!-- Input untuk password -->
+          <input type="password" placeholder="Password" required> <!-- Kolom input password, wajib diisi -->
+          <i class='bx bxs-lock-alt'></i> <!-- Ikon gembok dari Boxicons -->
+        </div>
+        <div class="input-box"> <!-- Input untuk konfirmasi password -->
+          <input type="password" placeholder="Confirm Password" required> <!-- Kolom input untuk mengkonfirmasi password -->
+          <i class='bx bxs-lock-alt'></i> <!-- Ikon gembok dari Boxicons -->
+        </div>
+          <button type="submit" class="btn">Register</button> <!-- Tombol register -->
+        <div class="register-link"> <!-- Bagian untuk opsi login jika sudah punya akun -->
+            <p>Already have an account? <a href="kopipaste.html">Login</a></p> <!-- Link ke halaman login -->
+        </div>
+      </form>
+  </div>
+</body>
+</html>
