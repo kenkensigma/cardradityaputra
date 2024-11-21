@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jawa</title>
+    <link rel="stylesheet" href="kelas.css">
+</head>
+
+<body>
+    <header>
+        <h1>Kizen</h1>
+        <nav>
+            <ul>
+                <li><a href="tabel alr.html">Roy</a></li>
+                <li><a href="tabel2 alr.html">Radit</a></li>
+                <li><a href="tabel3 alr.html">Nanda</a></li>
+                <li><a href="beranda alr.html">Home</a></li>
+                <li><a href="beranda.html">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="foto-container">
+        <div class="foto-tabel">
+            <div class="tabel-jawa">
+                <div class="mantap">
+                    <img src="Screenshot 2024-08-28 124544.png" alt="zeta" width="500">
+                    <button type="button" onclick="toggleView('table', this)">Tabel</button>
+                    <div>
+                        <div class="tablemantap hidden" id="data">
+
+                            <table>
+                        <tr>
+                            <td>Nama</td>
+                            <td>I Made Ananda Kusuma</td>
+                        </tr>
+                        <tr>
+                            <td>Kelas</td>
+                            <td>XI RPL 1</td>
+                        </tr>
+                        <tr>
+                            <td>Nama Panggilan</td>
+                            <td>Nanda</td>
+                        </tr>
+                        <tr>
+                            <td>Tempat/Tanggal Lahir</td>
+                            <td>Denpasar, 17 april 2008</td>
+                        </tr>
+                        <tr>
+                            <td>Umur</td>
+                            <td>16 tahun</td>
+                        </tr>
+                        <tr>
+                            <td>Anak ke</td>
+                            <td>Kedua</td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td>Laki-Laki</td>
+                        </tr>
+                        <tr>
+                            <td>Agama</td>
+                            <td>Hindu</td>
+                        </tr>
+                        <tr>
+                            <td>Alamat</td>
+                            <td>Jl. Bukit Indah I/I nomor 1</td>
+                        </tr>
+                        <tr>
+                            <td>TK</td>
+                            <td>Tegal Jaya</td>
+                        </tr>
+                        <tr>
+                            <td>SD</td>
+                            <td>SDN 12 Padangsambian</td>
+                        </tr>
+                        <tr>
+                            <td>SMP</td>
+                            <td>SMPN 5 Denpasar</td>
+                        </tr>
+                        <tr>
+                            <td>Golongan Darah</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>Jurusan</td>
+                            <td>Rekayasa Perangkat Lunak</td>
+                        </tr>
+                        <tr>
+                            <td>Hobi</td>
+                            <td>Karate, Main Game</td>
+                        </tr>
+                        <tr>
+                            <td>Cita-Cita</td>
+                            <td>Punya Istri
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ekstrakurikuler</td>
+                            <td>Karate</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>nandaK1808@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Nomor Telepon</td>
+                            <td>082340929592</td>
+                        </tr>
+                        <tr>
+                            <td>Instagram</td>
+                            <td>@Nick.Ghur</td>
+                        </tr>
+                    </table>
+                    </div>
+                    <div id="portofolioRadit" class="hidden">
+                        <h2>Portofolio Nandayonima</h2>
+                        <ul>
+                            <li>Web Project: <a href="beranda alr.html">First Website</li>
+                            <li>Web Developer Enthusiast - Learn the basics of Web development with HTML, CSS and JS</li>
+                            <li>Experience in Software Engineering - Completed a coding bootcamp with a web-based final project</li>
+                            <li>Ekstrakurikuler: English Club</li>
+                            <li>Will Become Spiderman One Day</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="hidden" onclick="portofolioRadit()">Portofolio</button>         
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dom.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fotoContainer = document.querySelector('.foto-container');
+        
+            function handleScroll() {
+                const containerPosition = fotoContainer.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+        
+                if (containerPosition < screenPosition) {
+                    fotoContainer.classList.add('visible');
+                }
+            }
+        
+            window.addEventListener('scroll', handleScroll);
+        
+            // Memastikan jika elemen sudah terlihat saat halaman dimuat
+            handleScroll();
+        });
+    </script>
+</body>
+
+</html>
